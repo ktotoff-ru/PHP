@@ -11,7 +11,7 @@ do {
 
     // int
 
-    if ( !is_numeric($a) ) {
+    if ( !ctype_digit($a) ) {
         fwrite(STDERR, "Введите, пожалуйста, число! ");
     }
     
