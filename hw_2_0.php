@@ -29,7 +29,6 @@ do {
         fwrite(STDERR, "Введите, пожалуйста, число! ");
     }
 
-
     // zero
 
     if ( ctype_digit($b) && (int) $b === 0 ) {
