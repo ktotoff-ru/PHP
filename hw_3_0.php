@@ -89,12 +89,12 @@ $fio = userNameFormat( $rawInput , "fio");
 
 # Вывод
 
-echo "------------------" . PHP_EOL ;
-echo "RAW: " . $rawInput . PHP_EOL ;
-echo "------------------" . "\n\n" ;
+echo "------------------" . PHP_EOL;
+echo "RAW: " . $rawInput . PHP_EOL;
+echo "------------------" . "\n\n";
 
 echo "Полное имя: " . $fullName . PHP_EOL ;
-echo "Фамилия и инициалы: " . $surnameAndInitials . PHP_EOL ;
-echo "ФИО: " . $fio . PHP_EOL ;
+echo "Фамилия и инициалы: " . $surnameAndInitials . PHP_EOL;
+echo "ФИО: " . $fio . PHP_EOL;
 
 ?>
