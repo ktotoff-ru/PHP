@@ -22,4 +22,65 @@ echo "Hello, world!"  . PHP_EOL ;
 //     E_USER_DEPRECATED
 // );
 
+
+
+// function out( ...$items ) {
+
+//     foreach ($items as $arg) {
+//         echo $arg . PHP_EOL;
+//     }
+
+// }
+
+// echo out("php", "js", "c++", "pyton");
+
+
+// function counter() {
+
+//     static $count = 0;
+//     return ++$count . PHP_EOL;
+
+// }
+
+// echo counter();
+// echo counter();
+// echo counter();
+// echo counter();
+
+// function data($bt) {
+//     $kb = $bt / 1024;
+//     $mb = $kb / 1024;
+//     $gb = $mb / 1024;
+//     return [$bt, $kb, $mb, $gb];
+// }
+// print_r( data(54989777) );
+
+// Замыкание
+// $message = "Text Message";
+// $mFu = function() use ($message) {
+//     echo $message;
+// };
+// echo $mFu();
+
+// Четность
+// function odd( int $number) {
+//     if ($number % 2 == 0 ) {
+//         return "Четное";
+//     } else {
+//         return "Нечетное";
+//     }
+// }
+// echo odd(12);
+
+// Сумма любого количества элементов
+// function sum(...$items) {
+//     $sum = 0;
+//     for ($i = 0; $i < count($items); $i++ ) {
+//         $sum += $items[$i];
+//     }
+//     return $sum;
+// }
+// echo sum(10, 5, 2, 3, 1);
+
+
 ?>
