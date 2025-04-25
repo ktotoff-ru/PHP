@@ -3,7 +3,6 @@
 declare(strict_types = 1);
 $items = [];
 
-
 # Константы по заданию
 
 const OPERATION_EXIT    = 0;
@@ -20,7 +19,6 @@ const ELEMENT_UNSET     = "Товар \e[1m%s\e[0m удален." . PHP_EOL;
 const ELEMENT_FOUND     = "Товар \e[1m%s\e[0m не найден." . PHP_EOL;
 const ARR_EMPTY         = "\e[1m—— Список покупок пуст! ——\e[0m" . PHP_EOL;
 
-
 # Основные операции
 
 $operations = [
@@ -30,7 +28,6 @@ $operations = [
     OPERATION_PRINT     => OPERATION_PRINT  . ". Отобразить список покупок.",
     OPERATION_UPDATE    => OPERATION_UPDATE . '. Изменить список покупок.'
 ];
-
 
 # ВЫБОР ОПЕРАЦИИ
 
