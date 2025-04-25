@@ -38,8 +38,8 @@ $origin = new DateTime( $year . "-" . $month . "-" . "01");
 $target = new DateTime( $targetYear . "-" . $targetMonth . "-" . "01");
 
 # Подстановка месяца
-function month(string $month): string  {
-    $result = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+function month(string $month) {
+    $result = [ 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
     if ( $month > 0 ) return $result[$month - 1];
 }
 
