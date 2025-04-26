@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-$getString = $_GET['getstring'];
+$getString = $_GET['getstring'] ? $_GET['getstring'] : NULL;
 
 // $fileName  = basename( __FILE__ ) . ".txt";
 

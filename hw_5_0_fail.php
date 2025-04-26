@@ -1,10 +1,5 @@
 <?php 
 
-/* Не 
-
-
-*/
-
 declare(strict_types = 1);
 
 # Подстановка месяца
@@ -21,7 +16,7 @@ function sheduler( int $year, int $month, int $period = 1 ): void {
     for ($m = 0; $m < $period; $m++) {
 
         $range = $go->format('t');
-        $count = 0;
+        $count = 1;
         // $result = [];
     
         # Дни
@@ -56,7 +51,7 @@ function sheduler( int $year, int $month, int $period = 1 ): void {
                 # Календарные выходные дни
                 echo  "\033[31m" . $template . "\033[0m" . $weekDivider ;
                 // $condition = "rest";
-                $count = 0;
+                $count = 1;
             }
 
             else if ( !$weekEnd ) {
