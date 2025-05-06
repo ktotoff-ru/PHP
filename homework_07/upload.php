@@ -9,29 +9,24 @@ $folder = "./upload/";
 $upload = $_SERVER['DOCUMENT_ROOT'] . "/upload/";
 
 $error = false;
-$count = 0;
 
 // Поле «Выбрать файл»
 
-if ( !is_uploaded_file($_FILES['content']['tmp_name']) ) {
-    $count++;
-    $error = ERR_CONTENTS;
-}  else $content = $_FILES['content'];
+if ( is_uploaded_file($_FILES['content']['tmp_name']) ) {
+    $content = $_FILES['content'];    
+}  else $error = ERR_CONTENTS;
 
 // Поле «Имя файла»
 
-if ( empty($_POST['name']) ) {
-    $error = ERR_FILENAME;
-    $count++;
-} else $name = $_POST['name'];
-
+if ( !empty($_POST['name']) ) {
+    $name = $_POST['name'];
+} else $error = ERR_FILENAME;
 
 // Оба поля пустые
-// if ( $counter > 1 ) $error = ERR_TOTEMPTY;
 
 if ( empty($_POST['name']) && !is_uploaded_file($_FILES['content']['tmp_name']) ) $error = ERR_TOTEMPTY;
 
-if ( !$count ) {
+if ( !$error ) {
 
     // Создаем папку для загрузки файлов
 
