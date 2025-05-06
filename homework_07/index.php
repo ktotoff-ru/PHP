@@ -17,7 +17,7 @@ $error = ( !empty($_GET["error"]) ) ? "<div class='message error'> " . $_GET["er
             <?= $error ? $error : NULL ?>
             <form action='./upload.php' method='post' enctype='multipart/form-data'>
                 <input name='name' type='text' value='<?= ( isset($_GET["name"] ) ? $_GET["name"] : NULL  ) ?>' placeholder='Укажите имя файла'>
-                <input name='content' type='file'>
+                <input name='content' type='file' value=''>
                 <button type='submit'>Отправить</button>
             </form>
         </section>
